@@ -218,6 +218,39 @@ body {
   .product-button.added-to-cart {
     background-color: grey; /* Grey when product is added */
   }
+
+  .cart-icon-container {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .cart-count {
+    position: absolute;
+    top: 0;
+    right: -4px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    min-width: 24px;
+    height: 24px;
+    padding: 0 5px;
+  
+    border-radius: 50%;
+    background-color: #e74c3c;
+    color: white;
+  
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1;
+  }
+
+
+
+
   @media (max-width: 1200px) {
     .product-card {
       flex: 1 1 calc(33.33% - 20px); /* Adjust width for 3 cards per row with 20px gap on medium screens */
