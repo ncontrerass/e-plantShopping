@@ -55,8 +55,14 @@ const CartItem = ({ onContinueShopping }) => {
     return numericCost * item.quantity;
   };
 
+  const totalPlants = cart.reduce(
+    (total, item) => total + item.quantity,
+    0
+    );
+
   return (
     <div className="cart-container">
+      <h2>Total Plants: {totalPlants}</h2>
       <h2 style={{ color: 'black' }}>Total Cart Amount: ${calculateTotalAmount()}</h2>
       <div>
         {cart.map(item => (
